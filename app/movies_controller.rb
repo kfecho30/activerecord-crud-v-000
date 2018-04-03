@@ -19,7 +19,7 @@ end
 
 def can_be_created_in_a_block(args = nil)
   Movie.create do |m|
-    if args.is_nil?
+    if !args
       movie = Movie.new
     else
     end
